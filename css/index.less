@@ -5,6 +5,9 @@ body{
 .main{
     width:1180px;
     margin: 0 auto;
+    &.top{
+        padding-top:23px;
+    }
 }
 .f_left{
     float: left;
@@ -28,16 +31,24 @@ body{
     width: 300px;
     padding: 0 20px;
     height: 35px;
-    &:focus{
-        border-color: #66afe9;
-        outline-color: transparent;
-    }
+    // &:focus{
+    //     border-color: #66afe9;
+    //     outline-color: transparent;
+    // }
 }
 .dump{
     padding: 10px 40px 10px 10px;
+    &:hover{
+        cursor: pointer;
+        color: #66afe9;
+    }
   }
 .dump1{
     padding: 10px ;
+    &:hover{
+        cursor: pointer;
+        color: #66afe9;
+    }
 }
 .mybtn.btn-danger{
     padding:0;
@@ -47,12 +58,17 @@ body{
     line-height: 35px;
 }
 .bg_banner{
-    background: pink;
+    background: url('../img/banner.png');
     position: relative;
 
    
 
     .content_banner{
-        height: 500px;
+        height: 600px;
     }
 }
+
+
+
+
+
