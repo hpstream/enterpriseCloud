@@ -47,7 +47,13 @@
                </div>
            </div>
            <div class='bg_banner'>
-                <div class='main content_banner'>      
+                <div class=' content_banner item0 active'>      
+                        
+                </div>
+                <div class=' content_banner item1'>      
+                        
+                </div>
+                <div class=' content_banner item2'>      
                         
                 </div>
            </div>
@@ -56,5 +62,14 @@
 </body>
 
 <script src="./js/index.js"></script>
+
+<script>
+   var i=0;
+   setInterval(function(){
+       i++;
+       $('.content_banner').removeClass('active');
+       $('.item'+i%3).addClass('active');
+   },3000)
+</script>
 
 </html>
